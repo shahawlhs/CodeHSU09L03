@@ -1,10 +1,20 @@
 public class Square extends Rectangle{
-//instance variables
+//instance variables - none needed
 
 
     //constructor
+    public Square (double sideLength){
+        super(sideLength, sideLength);
+    }
 
     //getSideLength
+    public double getSideLength(){
+        return super.getHeight();
+    }
 
-    //toString @override
+    //toString
+    @Override
+    public String toString(){
+        return "Square with side lengths " + getSideLength();
+    }
 }
